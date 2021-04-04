@@ -1,0 +1,23 @@
+{
+  "name": "hardhat-yulp",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "David Mihal",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.10",
+    "@types/glob": "^7.1.3",
+    "@types/mocha": "^8.2.2",
+    "hardhat": "^2.1.2",
+    "typescript": "^4.2.3"
+  },
+  "dependencies": {
+    "fs-extra": "^9.1.0",
+    "glob": "^7.1.6",
+    "yulp": "^0.2.3"
+  }
+}

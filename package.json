@@ -1,6 +1,6 @@
 {
   "name": "hardhat-yulp",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "license": "MIT",
   "author": "David Mihal",
   "main": "dist/index.js",

@@ -139,9 +139,7 @@ function add0xPrefixIfNecessary(hex: string): string {
 }
 
 export async function saveArtifacts(output: any, abis: any, artifacts: Artifacts) {
-  console.log(abis);
   for (const [sourceName, file] of Object.entries(output.contracts)) {
-    console.log(sourceName);
     for (const [contractName, contractResult] of Object.entries(file as any)) {
       const artifact = {
         _format: ARTIFACT_FORMAT_VERSION,

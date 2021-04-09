@@ -1,6 +1,6 @@
 {
   "name": "hardhat-yulp",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "author": "David Mihal",
   "main": "dist/index.js",
@@ -19,5 +19,11 @@
     "fs-extra": "^9.1.0",
     "glob": "^7.1.6",
     "yulp": "^0.2.3"
-  }
+  },
+  "files": [
+    "dist/",
+    "src/",
+    "LICENSE",
+    "README.md"
+  ]
 }

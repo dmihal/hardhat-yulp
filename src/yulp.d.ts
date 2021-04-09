@@ -2,6 +2,8 @@
 declare module 'yulp' {
   interface Compilation {
     results: string;
+    signatures: any[];
+    topics: any[];
   }
 
   interface YulpPackage {

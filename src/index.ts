@@ -32,7 +32,7 @@ subtask(TASK_COMPILE_YULP, async (_, { config, artifacts, run }) => {
 
   // This plugin is experimental, so this task isn't split into multiple
   // subtasks yet.
-  let input = await compile(config.yulp, config.paths, artifacts);
+  const { input, abis } = await compile(config.yulp, config.paths, artifacts);
   const output = await run('compile:solidity:solc:run', { input, solcPath: solcBuild.compilerPath });
 
   if (output.errors && output.errors.filter((error: any) => error.message !== YUL_WARNING).length > 0) {
@@ -42,5 +42,5 @@ subtask(TASK_COMPILE_YULP, async (_, { config, artifacts, run }) => {
     return;
   }
 
-  await saveArtifacts(output, artifacts);
+  await saveArtifacts(output, abis, artifacts);
 });
